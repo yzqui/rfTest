@@ -1,0 +1,35 @@
+server:
+  port: 8091
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/link_test?useSSL=false
+    username: root
+    password: root
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    cluster.nodes: 127.0.0.1:6379
+    timeout: 1800000
+
+#    password: redis_x2w7pc8sWzS7yo
+    jedis:
+      pool:
+        max-idle: 16
+        max-active: 32
+        min-idle: 8
+  #  consul:
+  #    host: 10.131.20.12
+  #    port: 8500
+  cloud:
+    consul:
+      enabled: false
+  kafka.bootstrap-servers: kafka1.kafka.rockflow.tech:9092,kafka2.kafka.rockflow.tech:9092,kafka3.kafka.rockflow.tech:9092
+  zipkin.enabled: false
+flow:
+  training:
+    link:
+      domain: short.url
+apollo:
+  bootstrap:
+    enabled: true
+  meta: http://localhost:8080

@@ -1,0 +1,1 @@
+replace into link(id, short_url_id,short_url,original_url) values(1, '4323212312','http://short.url/4323212312','https://www.npr.org/2020/06/01/865510819/little-progress-made-in-trumps-plan-for-private-retailers-to-test-for-coronaviru')

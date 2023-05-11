@@ -1,0 +1,16 @@
+#spring:
+#  cloud:
+#    consul:
+#      enabled: false
+#      discovery:
+#        register: false
+#        enabled: false
+#        catalog-services-watch:
+#          enabled: false
+#    discovery:
+#      enabled: false
+#  zipkin.enabled: false
+#  autoconfigure.exclude:
+#    - com.github.seanyinx.wing.spring.cache.redis.RedisLettuceClusterConfiguration
+#
+#logging.level.com.rf.link: debug
